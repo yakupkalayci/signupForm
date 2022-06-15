@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    font-size: 17px;
+}
+
+#section1 {
+    background-color: rosybrown;
+    width: 40%;
+    background-image: url("./bgImage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#section1 > #logo {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#section2 {
+    background-color: #f0f0f0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section2 > #heading {
+    padding-left: 4.5rem;
+    font-size: 23px;
+}
+
+form {
+    margin-top: 2rem;
+    padding: 25px 75px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.formRow {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+#left {
+    margin-right: 10rem;
+}
+
+.formItem > label {
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formItem > input {
+    width: 250px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 0.2rem 1rem;
+    font-size: 1.1rem;
+}
+
+#formButton {
+    margin-top: 2rem;
+    padding-left: 4.5rem;
+}
+
+#formButton > button {
+    background-color: green;
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#haveAnAccountLink {
+    margin-top: 1.5rem;
+    padding-left: 4.5rem;
+    display: flex;
+    column-gap: 10px;
+}
+
+#haveAnAccountLink > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#haveAnAccountLink > a:hover {
+    text-decoration: underline;
+}
