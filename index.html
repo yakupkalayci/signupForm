@@ -9,7 +9,11 @@
 </head>
 <body>
     <div id="section1">
-        <div id="logo">Logo</div>
+        <div id="logo">
+            <h2>
+                <a href="https://github.com/yakupkalayci" target="_blank">Yakup Kalaycı</a>
+            </h2>
+        </div>
     </div>
     <div id="section2">
         <div id="heading">
@@ -20,42 +24,44 @@
                     <div class="formRow">
                         <div class="formItem" id="left">
                             <label for="fName">First Name</label>
-                            <input type="text" name="fName" id="fName">
+                            <input type="text" name="fName" id="fName" required>
                         </div>
                         <div class="formItem">
                             <label for="lName">Last Name</label>
-                            <input type="text" name="lName" id="lName">
+                            <input type="text" name="lName" id="lName" required>
                         </div>
                     </div>
                     <div class="formRow">
                         <div class="formItem" id="left">
                             <label for="fName">Email</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="formItem">
-                            <label for="lName">Phone Number</label>
-                            <input type="tel" name="pNumber" id="pNumber">
+                            <label for="lName">Phone Number<span id="phoneLabelExample"><small>(eg:555-555-55-55)</small></span></label>
+                            <input type="tel" name="pNumber" id="pNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
                         </div>
                     </div> 
                     <div class="formRow">
                         <div class="formItem" id="left">
                             <label for="fName">Password</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="formItem">
                             <label for="lName">Confirm Password</label>
-                            <input type="password" name="confirmPass" id="confirmPass">
+                            <input type="password" name="confirmPass" id="confirmPass" required>
                         </div>
+                    </div>
+                    <div id="formButton">
+                        <button type="submit">Create Account</button>
                     </div>    
             </form>
-            <div id="formButton">
-                <button>Create Account</button>
-            </div>
             <div id="haveAnAccountLink">
                 <p>Already have an account?</p>
                 <a href="#">Log in</a>
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
